@@ -2,15 +2,22 @@ package main
 
 import "fmt"
 
-var endereco string // endereco = ""
-var telefone = "9999-9999"
-var quantidade int // quantidade = 0
-var comprou bool   // comprou = false
-var valor float64  // valor = 0.00
-var palavras rune
+var (
+	//Endereco é um valor importante e tem de ser público
+	Endereco string
+	//Telefone é um valor importante para a aula
+	Telefone            string  // Variável Endereço é pública enquanto telefone é privada
+	quantidade, estoque int     // quantidade = 0
+	comprou             bool    // comprou = false
+	valor               float64 // valor = 0.00
+	palavras            rune
+)
 
 func main() {
-	fmt.Printf("endereco: %s\r\n", endereco)
+	teste := "Valor de Teste"
+	fmt.Printf("endereco: %s\r\n", Endereco)
 	fmt.Printf("quantidade: %d\r\n", quantidade)
 	fmt.Printf("comprou: %v\r\n", comprou)
+	fmt.Printf("palavras: %v\r\n", palavras)
+	fmt.Printf("O valor de teste é: %s\r\n", teste)
 }
